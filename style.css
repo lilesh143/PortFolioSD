@@ -1,7 +1,9 @@
 /* Google Font */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* CSS Reset */
+
 * {
     padding: 0;
     margin: 0;
@@ -10,12 +12,12 @@
     font-family: "Poppins", sans-serif;
 }
 
+
 /* CSS Variables */
+
 :root {
     --brand-color: #00bfa6;
-    --linear-back: Linear-gradient(180deg,
-            rgba(34, 193, 195, 1) 0%,
-            rgba(0, 191, 92, 1) 100%);
+    --linear-back: Linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(0, 191, 92, 1) 100%);
 }
 
 a {
@@ -27,7 +29,9 @@ li {
     list-style: none;
 }
 
+
 /* CSS in Body */
+
 body {
     height: 100vh;
     width: 100vw;
@@ -45,7 +49,9 @@ body {
     position: relative;
 }
 
+
 /* Sidebar */
+
 .website_container .sidebar_container {
     width: 35%;
     height: 100%;
@@ -66,7 +72,9 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
+    /* background-size: cover; */
+    /* margin-left: 14px; */
 }
 
 .sidebar_container .image .right_image_box {
@@ -74,8 +82,8 @@ body {
     height: 100px;
     background-color: white;
     position: absolute;
-    bottom: -3.5rem;
-    left: -3rem;
+    bottom: -5.5rem;
+    left: -1rem;
     transform: rotate(16deg);
 }
 
@@ -84,8 +92,8 @@ body {
     height: 100px;
     background-color: white;
     position: absolute;
-    bottom: -3.5rem;
-    right: -3rem;
+    bottom: -5.5rem;
+    right: -1rem;
     transform: rotate(-16deg);
 }
 
@@ -142,7 +150,9 @@ body {
     transition: 0.3s;
 }
 
+
 /* Sidebar Navigation */
+
 .sidebar_container .sidebar_navigation {
     position: absolute;
     top: 0;
@@ -170,7 +180,9 @@ body {
     font-weight: bold;
 }
 
+
 /* Content */
+
 .website_container .content_container {
     width: 100%;
     height: 100%;
@@ -189,6 +201,7 @@ body {
     background-color: gray;
     border-radius: 0.2rem;
 }
+
 
 /* About Page */
 
@@ -255,7 +268,9 @@ li .profile_title {
     border-radius: 0.3rem;
 }
 
+
 /* Resume Page */
+
 .resume_page .resume_container {
     margin: 1.2rem 0;
     display: flex;
@@ -309,6 +324,7 @@ li .profile_title {
     font-weight: 300;
 }
 
+
 /* Skills Container */
 
 .skill_box .skill_title {
@@ -333,7 +349,9 @@ li .profile_title {
     height: 0.8rem;
 }
 
+
 /* Blogs Page */
+
 .blogs_page .blogs_container {
     margin: 0.4rem;
 }
@@ -359,9 +377,10 @@ li .profile_title {
 }
 
 .blog_box .blog_image {
-    width: 100%;
+    width: 60%;
     height: auto;
 }
+
 
 /* Services Page */
 
@@ -409,7 +428,9 @@ li .profile_title {
     font-weight: 400;
 }
 
+
 /* Contact Page */
+
 .contact_page .contact_container {
     margin: 1.2rem 0.4rem;
 }
@@ -474,7 +495,9 @@ li .profile_title {
     transition: 0.3s;
 }
 
+
 /* Global Menu CSS */
+
 #global_menu_button_container {
     position: absolute;
     left: -3rem;
@@ -553,6 +576,7 @@ li .profile_title {
     transition: 0.3s;
 }
 
+
 /* Making Responsive */
 
 @media screen and (max-width: 1200px) {
@@ -566,30 +590,24 @@ li .profile_title {
     body {
         height: auto;
     }
-
     .website_container {
         flex-direction: column;
         width: 70%;
     }
-
     .website_container .sidebar_container {
         width: 100%;
         height: 80vh;
         margin-bottom: 1rem;
     }
-
     .about_profile {
         flex-direction: column;
     }
-
     .about_profile .left_profile {
         width: 100%;
     }
-
     .about_profile .right_profile {
         width: 100%;
     }
-
     #global_menu_button_container {
         display: block;
     }
@@ -599,38 +617,30 @@ li .profile_title {
     .website_container {
         margin-top: 10vh;
     }
-
     .resume_page .resume_container {
         flex-direction: column;
     }
-
     .left_resume {
         border-right: none;
         border-bottom: 0.2rem solid var(--brand-color);
     }
-
     .services_page .services_container {
         flex-direction: column;
         margin: 0;
     }
-
     .services_page .services_container .services_box {
         width: 100%;
         margin: 0.6rem 0;
     }
-
     .contact_container form .form_name_row {
         flex-direction: column;
     }
-
     .contact_container form .form_name_row .left_form_row {
         width: 100%;
     }
-
     .contact_container form .form_name_row .right_form_row {
         width: 100%;
     }
-
     #global_menu_button_container {
         position: fixed;
         top: -0.1rem;
@@ -644,22 +654,18 @@ li .profile_title {
         align-items: center;
         padding: 0 1rem;
     }
-
     #global_menu_button_container #global_menu_button {
         color: black;
         background-color: transparent;
         padding: 0.2rem;
         font-size: 1.6rem;
     }
-
     #global_menu_button_container p {
         display: block;
     }
-
     #global_menu_items {
         width: 100%;
     }
-
     #global_menu_items #global_menu_close_button {
         left: 0;
         text-align: center;
